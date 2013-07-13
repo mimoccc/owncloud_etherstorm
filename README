@@ -2,5 +2,26 @@ Project Etherstorm
 
 Use the full URL in the Admin-Panel. e.g. http://www.padserver.com/api/1.2.1/
 
+Possible Improvements:
+
+Add Priority to old Pads
+Only Owner/Admin can delete Pads
+Read Padlist from DB (for old Etherpad-Lite Versions)
+"Recycle Bin" for Administrators (can restore deleted pads)
+Secret Pads (Session Authentication/Passwords)
+Assign Pads to Groups
+Administrator: Change Owner of Pad
+Administrator-Config-Option: Email-Pad-Content 
+Pad-Contextmenu: Mark Pad as corrupted -> Administrator: recreate Pad (api,.js or db)
+User-Config: User-Color
+Create new Pad via Contextmenu: Only accessible after refresh
+Visual Map of Users/Pads
+Input Validation/Security
+Translation
+Encrypt/Decrypt Database-Values (basic auth)
+
+API: Paduserscount->hover:padusers
+     ispasswordprotected
+	 listauthorsofpad
 
 
