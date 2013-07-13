@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+	<id>owncloud_etherstorm</id>
+	<name>owncloud_etherstorm</name>
+	<description>Etherpad Lite Management</description>
+	<version>1.0</version>
+	<licence>AGPL</licence>
+	<author></author>
+	<require>4</require>
+</info>

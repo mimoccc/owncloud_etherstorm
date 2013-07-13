@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<database>
+	 <name>*dbname*</name>
+	 <create>true</create>
+	 <overwrite>false</overwrite>
+	 <charset>utf8</charset>
+	 <table>
+		<name>*dbprefix*etherstorm_config</name>
+		<declaration>
+		<field>
+				<name>user</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+			</field>
+			<field>
+				<name>url</name>
+				<type>text</type>
+				<notnull>true</notnull>
+    			<length>64</length>
+			</field>
+			<field>
+				<name>apikey</name>
+				<type>text</type>
+				<notnull>true</notnull>
+    			<length>64</length>
+			</field>
+			<field>
+				<name>authuser</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+			</field>
+            <field>
+				<name>authpw</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+			</field>
+			
+		</declaration>
+		</table>
+		<table>
+		<name>*dbprefix*etherstorm</name>
+		<declaration>
+		<field>
+				<name>creator</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+		<field>
+				<name>created</name>
+				<type>date</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+		<field>
+				<name>priority</name>
+				<type>integer</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+		<field>
+				<name>comment_author</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+		<field>
+				<name>comment_text</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+		<field>
+				<name>comment_time</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+		<field>
+				<name>padname</name>
+				<type>text</type>
+				<notnull>false</notnull>
+    			<length>64</length>
+		</field>
+			
+		
+		</declaration>
+		
+		</table>
+		
+</database>
