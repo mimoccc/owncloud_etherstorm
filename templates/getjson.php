@@ -35,7 +35,7 @@ if (isset($_POST['padname'])) {preg_match_all('/^[a-zA-Z0-9_]{5,99}$/',$_POST['p
 if (isset($_POST['priority'])) {preg_match_all('/^[0-9]{1,9}$/',$_POST['priority'],$priority);$priority=$priority[0][0];}
 if (isset($_POST['comment'])) {preg_match_all('/^[a-zA-Z0-9_]{4,99}$/',$_POST['comment'],$comment);$comment=$comment[0][0];}
 if (!isset($padserver)) {
-$query=OC_DB::prepare("select url from *PREFIX*etherstorm_config");
+$query=OC_DB::prepare("select url from *PREFIX*etherstorm_config where user is null");
 $result=$query->execute();
 $data = $result->fetchAll();
 $padserver = $data[0]["url"];
@@ -64,7 +64,7 @@ $padserver = $UrlArray[1].getAuthUser(OCP\User::getUser()).":".getAuthPW(OCP\Use
 
 
 if (!isset($apikey)) {
-$query=OC_DB::prepare("select apikey from *PREFIX*etherstorm_config");
+$query=OC_DB::prepare("select apikey from *PREFIX*etherstorm_config where user is null");
 $result=$query->execute();
 $data = $result->fetchAll();
 $apikey = $data[0]["apikey"];

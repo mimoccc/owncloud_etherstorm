@@ -47,7 +47,7 @@ json2 = {};
 json2.aaData = [];
 json2.aoColumns = [];
 count = 0;
-$('#table_id').dataTable().fnDeleteRow(0);
+$('#table_id').dataTable({"iDisplayLength":100}).fnDeleteRow(0);
 
 $.postJSON(OC.filePath('owncloud_etherstorm', 'templates', 'getjson.php'),'getallpads=', function(data2) {
 $.each (data2.data.padIDs, function(index,val) {
